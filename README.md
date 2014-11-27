@@ -9,7 +9,7 @@ Check [.vim](https://github.com/ARivottiC/.vim) for my VimL setup.
 
 ```sh
 cd ~/.vim/bundle
-git clone https://github.com/ARivottiC/rivotti.vim.git
+git submodule https://github.com/ARivottiC/rivotti.vim.git
 
 ln -s ~/.vim/bundle/rivotti.vim/.vimrc ~/.
 ```
