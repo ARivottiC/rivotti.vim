@@ -2,8 +2,7 @@
 " Perl Specific
 
 " check perl code with :make
-setl makeprg=perl\ %\ $*
-setl errorformat=%f:%l:%m
+compiler perl
 setl autowrite
 
 setl keywordprg=perldoc\ -T\ -f

@@ -18,11 +18,19 @@ au BufEnter * lcd %:p:h " Go to the directory of each file
 au BufRead,BufWrite * if ! &bin && &ft != 'markdown' | silent! %s/\s\+$//ge | endif
 au BufRead,BufWrite * call matchadd('ColorColumn', '\%79v', 100)
 
+" Yank 'to end of line' like C and D
+nn Y y$
+
+" grep
+nm <silent> <Leader>g :Ggrep<SPACE>
+au QuickFixCmdPost *grep* cwindow
+
 " clean Search
 nm <silent> <Leader>/ :nohlsearch<CR>
 
 " make
-nn <silent> <Leader>! :make\|copen<CR><CR><CR>
+nn <silent> <Leader>! :make<CR>
+au QuickFixCmdPost *make* copen
 
 " check
 nn <silent> <Leader>? :SyntasticCheck<CR>
