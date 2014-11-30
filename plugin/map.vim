@@ -22,15 +22,15 @@ au BufRead,BufWrite * call matchadd('ColorColumn', '\%79v', 100)
 nn Y y$
 
 " grep
-nm <silent> <Leader>g :Ggrep<SPACE>
-au QuickFixCmdPost *grep* cwindow
+nm <Leader>g :Ggrep<SPACE>
 
 " clean Search
 nm <silent> <Leader>/ :nohlsearch<CR>
 
 " make
-nn <silent> <Leader>! :make<CR>
-au QuickFixCmdPost *make* copen
+nn <Leader>! :make<CR>
 
 " check
 nn <silent> <Leader>? :SyntasticCheck<CR>
+
+au QuickFixCmdPost * cwindow
