@@ -28,9 +28,9 @@ nm <Leader>g :Ggrep<SPACE>
 nm <silent> <Leader>/ :nohlsearch<CR>
 
 " make
-nn <Leader>! :make<CR>
+nn <Leader>m :make<CR>
 
 " check
-nn <silent> <Leader>? :SyntasticCheck<CR>
+nn <silent> <Leader>s :SyntasticCheck<CR>
 
 au QuickFixCmdPost * cwindow
