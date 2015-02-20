@@ -14,3 +14,7 @@ let g:syntastic_javascript_checkers = ['jshint']
 
 let g:syntastic_enable_css_checker = 1
 let g:syntastic_css_checkers = ['csslint']
+
+let g:syntastic_enable_c_checker = 1
+let g:syntastic_c_checkers = ['gcc']
+let g:syntastic_c_compiler_options = '-Wall'
