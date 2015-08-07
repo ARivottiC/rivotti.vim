@@ -57,10 +57,11 @@ set showmatch           " show matching brackets
 set tabpagemax=30       " Max tabs with -p option
 set cursorline          " active cursor line highlight
 set number
-set clipboard=unnamedplus
+set clipboard=unnamed
 set modeline            " allow vim modes with comments
 set hidden
 set omnifunc=syntaxcomplete#Complete
+set switchbuf+=useopen
 
 let mapleader=","
 
