@@ -63,6 +63,9 @@ set hidden
 set omnifunc=syntaxcomplete#Complete
 set switchbuf+=useopen
 
+" search for tags file in the current dir and every parent until it finds one
+set tags=./tags;
+
 let mapleader=","
 
 call pathogen#infect()
