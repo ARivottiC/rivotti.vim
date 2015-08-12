@@ -4,10 +4,9 @@
 " sudo save
 cmap w!! w !sudo tee % >/dev/null
 
-" cycle tabs with ctrl + h or l
-map <C-h> gT
-map <C-l> gt
-" imap <C-a> <CR><Esc>O
+" cycle tabs with tab and shift tab
+nn <Tab>   :bnext<CR>
+nn <S-Tab> :bprevious<CR>
 
 " sort lines
 vn <silent> <leader>s :sort <Enter>
