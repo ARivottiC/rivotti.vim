@@ -15,7 +15,7 @@ au BufEnter * lcd %:p:h " Go to the directory of each file
 "au BufRead,BufWrite * if ! &bin && &ft != 'markdown' | silent! %s/\s\+$//ge | endif
 
 " mark trailing spaces and lines with more ten 100 columns
-au BufRead,BufWrite * if &ft != 'text' | call matchadd('ColorColumn', '\%100v.*', 50)
+au BufRead,BufWrite * if &ft !~ '^\(text\|log.*\)$' | call matchadd('ColorColumn', '\%100v.*', 50) | endif
 au BufRead,BufWrite * call matchadd('ColorColumn', '\s\+\n')
 
 " paste whatever in the corresponding window
