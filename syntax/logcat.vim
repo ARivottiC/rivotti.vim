@@ -14,9 +14,9 @@ syn match LogCatInfo    '^\([-0-9\[\. :]\+\)\?I[(/ ].*'
 syn match LogCatVerbose '^\([-0-9\[\. :]\+\)\?V[(/ ].*'
 syn match LogCatWarn    '^\([-0-9\[\. :]\+\)\?W[(/ ].*'
 
-hi def LogCatDebug   ctermfg=darkgreen guifg=darkgreen
-hi def LogCatError   ctermfg=red       guifg=red
-hi def LogCatFatal   ctermfg=white     guifg=white ctermbg=red guibg=red
-hi def LogCatInfo    ctermfg=blue      guifg=blue
-hi def LogCatVerbose ctermfg=gray      guifg=gray
-hi def LogCatWarn    ctermfg=brown     guifg=brown
+hi def LogCatDebug   ctermfg=39   guifg=39
+hi def LogCatError   ctermfg=red    guifg=red
+hi def LogCatFatal   ctermfg=white  guifg=white ctermbg=red guibg=red
+hi def LogCatInfo    ctermfg=40  guifg=40
+hi def LogCatVerbose ctermfg=white   guifg=white
+hi def LogCatWarn    ctermfg=166  guifg=166
