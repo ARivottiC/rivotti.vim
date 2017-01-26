@@ -76,3 +76,6 @@ filetype indent on
 syntax on               " syntax hilighting in vim
 set bg=light
 colorscheme rivotti256
+
+set title
+let &titleold=$TITLE
