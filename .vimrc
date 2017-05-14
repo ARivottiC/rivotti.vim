@@ -38,6 +38,7 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set title               " change the terminal's title"
 
 set nobackup            " use version control FFS!
+set nowritebackup
 set noswapfile          " use version control FFS!
 
 " Scrolling, nicer scrolling when wrapping
