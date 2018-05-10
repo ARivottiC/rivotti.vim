@@ -69,6 +69,8 @@ set tags=./.tags;
 
 let mapleader=","
 
+"set diffopt=vertical
+
 call pathogen#infect()
 
 filetype plugin on
