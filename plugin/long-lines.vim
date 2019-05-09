@@ -6,5 +6,4 @@ fun! MarkLongLines()
 endfun
 
 au BufRead,BufWrite,BufEnter * call MarkLongLines()
-au BufRead,BufWrite,BufEnter * call matchadd('ColorColumn', '\s\+\n')
 au BufLeave * match
