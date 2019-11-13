@@ -40,6 +40,10 @@ nn <silent> <Leader>s :SyntasticCheck<CR>
 nn <Leader>x :%!xxd<CR>
 nn <Leader>X :%!xxd -r<CR>
 
+" remove lead / from files while using gf(goto file)
+nnoremap <silent> gf :let @/ = substitute(expand('<cfile>'), '^/', '', '')
+                   \  <bar>normal gngf<cr>
+
 au QuickFixCmdPre *grep* wincmd k | wincmd l
 au QuickFixCmdPost *grep* botright cwindow | wincmd j
 

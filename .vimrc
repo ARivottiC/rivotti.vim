@@ -68,7 +68,7 @@ set switchbuf+=useopen
 set tags=./.tags;
 
 let mapleader=","
-
+set path=.,,$ANDROID_BUILD_TOP,$ANDROID_BUILD_TOP/$QCPATH,$ANDROID_PRODUCT_OUT 
 "set diffopt=vertical
 
 call pathogen#infect()
@@ -82,3 +82,4 @@ colorscheme rivotti256
 
 set title
 let &titleold=$TITLE
+
