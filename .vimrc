@@ -50,26 +50,24 @@ set scrolloff=2         " lines of context visible around the cursor at all time
 set wildmode=longest,list,full
 set wildmenu
 
-set number relativenumber
 set lazyredraw          " do not redraw while running macros (much faster) (LazyRedraw)"
 set nopaste             " use Ctrl + Shift + V FFS!
 "set mouse=a            " Mouse available in all operations
 set showmatch           " show matching brackets
 set tabpagemax=30       " Max tabs with -p option
 set cursorline          " active cursor line highlight
-set number
+set number relativenumber
 set clipboard=unnamed
 set modeline            " allow vim modes with comments
 set hidden
 set omnifunc=syntaxcomplete#Complete
 set switchbuf+=useopen
 
+" paths used with gf
+set path=.,,$ANDROID_BUILD_TOP,$ANDROID_BUILD_TOP/$QCPATH,$ANDROID_PRODUCT_OUT 
+
 " search for tags file in the current dir and every parent until it finds one
 set tags=./.tags;
-
-let mapleader=","
-set path=.,,$ANDROID_BUILD_TOP,$ANDROID_BUILD_TOP/$QCPATH,$ANDROID_PRODUCT_OUT 
-"set diffopt=vertical
 
 call pathogen#infect()
 
@@ -80,6 +78,7 @@ syntax on               " syntax hilighting in vim
 set bg=light
 colorscheme rivotti256
 
-set title
+" overrides
+let mapleader=","
 let &titleold=$TITLE
 
