@@ -64,7 +64,11 @@ set omnifunc=syntaxcomplete#Complete
 set switchbuf+=useopen
 
 " paths used with gf
-set path+=$ANDROID_BUILD_TOP,$ANDROID_BUILD_TOP/$QCPATH,$ANDROID_PRODUCT_OUT
+if !empty($ANDROID_BUILD_TOP)
+    set path+=$ANDROID_BUILD_TOP
+    set path+=$ANDROID_BUILD_TOP/$QCPATH
+    set path+=$ANDROID_PRODUCT_OUT
+endif
 
 " search for tags file in the current dir and every parent until it finds one
 set tags+=./.tags;
