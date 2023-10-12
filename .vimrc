@@ -63,10 +63,14 @@ set hidden
 set omnifunc=syntaxcomplete#Complete
 set switchbuf+=useopen
 
+" Split below or rigth by default
+" set splitbelow splitright
+
 " paths used with gf
+set path+=include
 if !empty($ANDROID_BUILD_TOP)
     set path+=$ANDROID_BUILD_TOP
-    set path+=$ANDROID_BUILD_TOP/$QCPATH
+    set path+=$QCPATH
     set path+=$ANDROID_PRODUCT_OUT
 endif
 
