@@ -11,7 +11,7 @@ nn <S-Tab> :bprevious<CR>
 " sort lines
 vn <silent> <leader>s :sort <Enter>
 
-au BufEnter * silent! lcd %:p:h " Go to the directory of each file
+"au BufEnter * silent! lcd %:p:h " Go to the directory of each file
 "au BufRead,BufWrite * if ! &bin && &ft != 'markdown' | silent! %s/\s\+$//ge | endif
 
 " paste whatever in the corresponding window
@@ -36,14 +36,10 @@ nn <Leader>m :make<CR>
 " check
 nn <silent> <Leader>s :SyntasticCheck<CR>
 
-" buffer to hex and buffer do bin
-nn <Leader>x :%!xxd<CR>
-nn <Leader>X :%!xxd -r<CR>
-
 " remove lead / from files while using gf(goto file)
 nnoremap <silent> gf :let @/ = substitute(expand('<cfile>'), '^/', '', '')
                    \  <bar>normal gngf<cr>
 
-au QuickFixCmdPre *grep* wincmd k | wincmd l
-au QuickFixCmdPost *grep* botright cwindow | wincmd j
+" au QuickFixCmdPre *grep* wincmd k | wincmd l
+" au QuickFixCmdPost *grep* botright cwindow | wincmd j
 
