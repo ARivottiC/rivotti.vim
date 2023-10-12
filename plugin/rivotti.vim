@@ -80,7 +80,7 @@ filetype indent on
 
 syntax on               " syntax hilighting in vim
 set bg=light
-colorscheme rivotti256
+silent! colorscheme rivotti256
 
 " overrides
 let mapleader=","
