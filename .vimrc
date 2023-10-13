@@ -1,6 +1,6 @@
 Plug 'ARivottiC/rivotti256.vim', { 'branch': 'develop' }
 Plug 'Raimondi/delimitMate'
-Plug 'airblade/vim/gitgutter'
+Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'gerw/vim-HiLinkTrace'
 Plug 'ntpeters/vim-better-whitespace'
