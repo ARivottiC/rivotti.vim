@@ -73,8 +73,6 @@ endif
 " search for tags file in the current dir and every parent until it finds one
 set tags+=./.tags;
 
-"call pathogen#infect()
-
 filetype plugin on
 filetype indent on
 
