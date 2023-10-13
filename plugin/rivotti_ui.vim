@@ -5,3 +5,5 @@ let g:netrw_banner       = 0 " hide banner
 let g:netrw_browse_split = 2 " open files in vertical split
 let g:netrw_altv         = 1
 let g:netrw_winsize      = 15
+
+highlight SclowSbar ctermbg=238

@@ -2,6 +2,7 @@ Plug 'ARivottiC/rivotti256.vim', { 'branch': 'develop' }
 Plug 'gerw/vim-HiLinkTrace'
 Plug 'lzap/vim-selinux'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'obcat/vim-sclow'
 Plug 'powerline/powerline'
 Plug 'preservim/nerdtree'
 Plug 'rubberduck203/aosp-vim'
@@ -33,6 +34,8 @@ let g:airline#extensions#hunks#enabled = 1
 let g:airline#extensions#hunks#non_zero_only = 1
 let g:airline_powerline_fonts = 1
 set laststatus=2
+
+highlight SclowSbar ctermbg=238
 
 Plug 'scrooloose/syntastic'
 let g:syntastic_always_populate_loc_list = 1
