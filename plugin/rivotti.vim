@@ -50,18 +50,22 @@ set scrolloff=2         " lines of context visible around the cursor at all time
 set wildmode=longest,list,full
 set wildmenu
 
+" Buffers/Files/Windows
+set autochdir           " cd to opened buffer
+set hidden
+set switchbuf+=useopen
+
 set lazyredraw          " do not redraw while running macros (much faster) (LazyRedraw)"
 set nopaste             " use Ctrl + Shift + V FFS!
 "set mouse=a            " Mouse available in all operations
 set showmatch           " show matching brackets
 set tabpagemax=30       " Max tabs with -p option
 set cursorline          " active cursor line highlight
+set cursorcolumn        " active cursor column highlight
 set number relativenumber
 set clipboard=unnamed
 set modeline            " allow vim modes with comments
-set hidden
 set omnifunc=syntaxcomplete#Complete
-set switchbuf+=useopen
 
 " paths used with gf
 if !empty($ANDROID_BUILD_TOP)

@@ -11,9 +11,6 @@ nn <S-Tab> :bprevious<CR>
 " sort lines
 vn <silent> <leader>s :sort <Enter>
 
-"au BufEnter * silent! lcd %:p:h " Go to the directory of each file
-"au BufRead,BufWrite * if ! &bin && &ft != 'markdown' | silent! %s/\s\+$//ge | endif
-
 " paste whatever in the corresponding window
 nn <Leader>< <C-W>h p <C-W>l
 nn <Leader>> <C-W>l p <C-W>h
