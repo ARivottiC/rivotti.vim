@@ -87,3 +87,5 @@ silent! colorscheme rivotti256
 " overrides
 let mapleader=","
 let &titleold=$TITLE
+
+silent! call lengthmatters#highlight_link_to('ColorColumn')
