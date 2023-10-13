@@ -70,7 +70,7 @@ set omnifunc=syntaxcomplete#Complete
 " paths used with gf
 if !empty($ANDROID_BUILD_TOP)
     set path+=$ANDROID_BUILD_TOP
-    set path+=$ANDROID_BUILD_TOP/$QCPATH
+    set path+=$QCPATH
     set path+=$ANDROID_PRODUCT_OUT
 endif
 
