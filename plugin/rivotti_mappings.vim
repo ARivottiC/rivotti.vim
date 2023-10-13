@@ -42,4 +42,3 @@ nnoremap <silent> gf :let @/ = substitute(expand('<cfile>'), '^/', '', '')
 
 " au QuickFixCmdPre *grep* wincmd k | wincmd l
 " au QuickFixCmdPost *grep* botright cwindow | wincmd j
-
