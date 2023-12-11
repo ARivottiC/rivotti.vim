@@ -51,7 +51,7 @@ set wildmode=longest,list,full
 set wildmenu
 
 " Buffers/Files/Windows
-set autochdir           " cd to opened buffer
+"set autochdir           " cd to opened buffer
 set hidden
 set switchbuf+=useopen
 
@@ -66,13 +66,6 @@ set number relativenumber
 set clipboard=unnamed
 set modeline            " allow vim modes with comments
 set omnifunc=syntaxcomplete#Complete
-
-" paths used with gf
-if !empty($ANDROID_BUILD_TOP)
-    set path+=$ANDROID_BUILD_TOP
-    set path+=$QCPATH
-    set path+=$ANDROID_PRODUCT_OUT
-endif
 
 " search for tags file in the current dir and every parent until it finds one
 set tags+=./.tags;
