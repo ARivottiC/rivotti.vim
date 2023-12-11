@@ -51,7 +51,7 @@ set wildmode=longest,list,full
 set wildmenu
 
 " Buffers/Files/Windows
-"set autochdir           " cd to opened buffer
+set autochdir           " cd to opened buffer
 set hidden
 set switchbuf+=useopen
 
